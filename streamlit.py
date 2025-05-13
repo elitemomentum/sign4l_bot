@@ -102,7 +102,7 @@ This app lets you create an Assistant that can read Project files and assist you
 2. Click "Create Assistant" and then "Upload and Index PDFs".  
 3. Wait ~30 seconds for processing (One time).  
 4. Ask questions about the documents in Tab 2.
-5. If already exist, please proceed to querying directly or delete it first and recreate it.  
+5. If project already exist, please proceed to querying directly or delete it first and recreate it.  
 """)
 # Initialize session state for tracking file uploads
 if 'file_ids' not in st.session_state:
