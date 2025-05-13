@@ -4,7 +4,6 @@ import zipfile
 import tempfile
 import time
 from pinecone import Pinecone
-from pinecone_plugins.assistant.models.chat import Message
 
 # ========== CONFIG ==========
 
@@ -77,7 +76,8 @@ def check_files_status():
 
 def ask_question(query):
     assistant = pc.assistant.Assistant(assistant_name=ASSISTANT_NAME)
-    msg = Message(role="user", content=query)
+    # Use dictionary format for messages instead of Message class
+    msg = {"role": "user", "content": query}
     resp = assistant.chat(messages=[msg])
     return resp['message']['content']
 
