@@ -98,10 +98,10 @@ def delete_assistant():
 st.title("Project Manager Assistant")
 st.markdown("""
 This app lets you create an Assistant that can read Project files and assist you with details.  
-1. Upload a ZIP file of PDFs in Tab 1.  
+1. Upload a ZIP file of PDFs in Upload ZIP tab.  
 2. Click "Create Assistant" and then "Upload and Index PDFs".  
 3. Wait ~30 seconds for processing (One time).  
-4. Ask questions about the documents in Tab 2.
+4. Ask questions about the documents in Ask Question tab.
 5. If project already exist, please proceed to querying directly or delete it first and recreate it.  
 """)
 # Initialize session state for tracking file uploads
