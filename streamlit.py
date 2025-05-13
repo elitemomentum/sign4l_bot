@@ -95,9 +95,14 @@ def delete_assistant():
 
 # ========== UI ==========
 
-st.title("📄 Pinecone PDF Assistant")
-st.markdown("Upload a ZIP of PDFs, ask questions, or delete your assistant.")
-
+st.title("Project Manager Assistant")
+st.markdown("""
+This app lets you create an Assistant that can read Project files and assist you with details.  
+1. Upload a ZIP file of PDFs in Tab 1.  
+2. Click "Create Assistant" and then "Upload and Index PDFs".  
+3. Wait ~30 seconds for processing (One time).  
+4. Ask questions about the documents in Tab 2.  
+""")
 # Initialize session state for tracking file uploads
 if 'file_ids' not in st.session_state:
     st.session_state['file_ids'] = []
